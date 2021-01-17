@@ -63,8 +63,10 @@ nav a {
     background-position: center;
     background-size: cover;
     padding-bottom: 60px;
+    padding-top: 60px;
 }
-main .container, .description .container {
+
+.description .container {
     max-width: 700px;
 }
 
@@ -74,30 +76,96 @@ main .container, .description .container {
     font-weight: 700;
     padding-bottom: 48px;
 }
-.description p{
+
+.description p {
     text-align: center;
     padding-bottom: 34px;
 }
-.button{
+
+.button {
     display: block;
     font-weight: 700;
     padding: 20px 88px;
     width: 280px;
     margin: auto;
-    border-radius:28px ;
+    border-radius: 28px;
     font-size: 18px;
     border: none;
     outline: none;
 }
 
 /* Main */
-main{
+
+main {
+    background-color: hsl(218, 28%, 13%);
     display: flex;
     justify-content: center;
+}
+main .container{
     flex-wrap: wrap;
 }
-main .services{
-    flex: 0.5;
+/* services */
+.services a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.services {
+    text-align: center;
+    width: 50%;
+    padding: 80px;
+}
+.services img{
+    padding-bottom: 30px;
+}
+.services h2{
+    padding-bottom: 30px;
+}
+.services p{
+    max-width: 340px;
+    margin: auto;
+}
+/*WORK*/
+.work .container{
+    padding:100px ;
+}
+.work-img, .work-text{
+    width: 50%;
+}
+.work-img{
+    display: flex;
+    justify-content: flex-end;
+}
+.work-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.work-text h2{
+    font-weight: 700;
+    font-size: 32px;
+}
+.work-text p{
+    font-size: 20px;
+}
+.work-text a, .work-text img {
+    color: hsl(198, 60%, 50%);
+}
+/* comments*/
+.comments{
+    display: flex;
+    justify-content: center;
+}
+.comments .container{
+   max-width: 1200px;
+   background-image: url(../../images/bg-quotes.png);
+   background-repeat: no-repeat;
+}
+.comment-card{
+    background-color: #21293c;
+    width: 360px;
+    height: 200px;
+    padding: 32px;
 }
 
 /*footer*/
@@ -109,4 +177,10 @@ main .services{
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width:1240px){
+    .description{
+        padding-top: 200px;
+    }
 }
