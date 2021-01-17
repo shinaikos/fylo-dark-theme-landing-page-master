@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 28%, 15%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.colunm {
+    flex-direction: column;
+}
+
+/*header*/
+
+header {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* NAV*/
+
+nav .container {
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 12px;
+}
+
+/* Section intro*/
+
+.intro img {
+    width: 100%;
+    max-width: 700px;
+}
+
+/* description */
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../images/bg-curvy-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 60px;
+}
+main .container, .description .container {
+    max-width: 700px;
+}
+
+.description h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 48px;
+}
+.description p{
+    text-align: center;
+    padding-bottom: 34px;
+}
+.button{
+    display: block;
+    font-weight: 700;
+    padding: 20px 88px;
+    width: 280px;
+    margin: auto;
+    border-radius:28px ;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+/* Main */
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main .services{
+    flex: 0.5;
+}
+
+/*footer*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
