@@ -85,13 +85,15 @@ nav a {
 .button {
     display: block;
     font-weight: 700;
-    padding: 20px 88px;
+    padding: 15px;
     width: 280px;
     margin: auto;
     border-radius: 28px;
     font-size: 18px;
     border: none;
     outline: none;
+    background-color: #91daed;
+    color: #fff;
 }
 
 /* Main */
@@ -101,10 +103,14 @@ main {
     display: flex;
     justify-content: center;
 }
-main .container{
+
+main .container {
     flex-wrap: wrap;
+    max-width: 832px;
 }
+
 /* services */
+
 .services a {
     text-decoration: none;
     color: #fff;
@@ -112,60 +118,192 @@ main .container{
 
 .services {
     text-align: center;
-    width: 50%;
-    padding: 80px;
+    width: 376px;
+    padding: 20px;
 }
-.services img{
+
+.services img {
     padding-bottom: 30px;
 }
-.services h2{
+
+.services h2 {
     padding-bottom: 30px;
 }
-.services p{
+
+.services p {
     max-width: 340px;
     margin: auto;
 }
+
 /*WORK*/
-.work .container{
-    padding:100px ;
+
+.work {
+    background-color: hsl(218, 28%, 13%);
 }
-.work-img, .work-text{
+
+.work .container {
+    padding: 100px;
+}
+
+.work-img, .work-text {
     width: 50%;
 }
-.work-img{
+
+.work-img {
     display: flex;
     justify-content: flex-end;
 }
-.work-text{
+
+.work-text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.work-text h2{
+
+.work-text h2 {
     font-weight: 700;
     font-size: 32px;
 }
-.work-text p{
+
+.work-text p {
     font-size: 20px;
 }
+
 .work-text a, .work-text img {
     color: hsl(198, 60%, 50%);
 }
+
 /* comments*/
-.comments{
+
+.comments {
     display: flex;
     justify-content: center;
+    background-color: hsl(218, 28%, 13%);
 }
-.comments .container{
-   max-width: 1200px;
-   background-image: url(../../images/bg-quotes.png);
-   background-repeat: no-repeat;
+
+.comments .container {
+    max-width: 1200px;
+    background-image: url(../../images/bg-quotes.png);
+    background-repeat: no-repeat;
 }
-.comment-card{
+
+.comment-card {
     background-color: #21293c;
     width: 360px;
-    height: 200px;
+    height: 220px;
     padding: 32px;
+    margin: 24px;
+}
+
+.comment-card-perfil {
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.comment-card img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.perfil-info {
+    padding-left: 16px;
+}
+
+.perfil-info .name {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.perfil-info .cargo {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* email */
+
+.email {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(218, 28%, 13%);
+}
+
+.email .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 868px;
+    background-color: #1c2230;
+    height: 280px;
+}
+
+.email form {
+    display: flex;
+    align-items: center;
+}
+
+.email input {
+    width: 400px;
+    height: 50px;
+    border-radius: 28px;
+    margin-right: 20px;
+}
+
+.email p {
+    text-align: center;
+}
+
+/*footer principal*/
+
+#footer .container {
+    flex-direction: column;
+}
+
+#footer {
+    background-color: hsl(216, 53%, 9%);
+}
+
+.footer-info {
+    display: flex;
+}
+
+.footer-info p, .contato, .contact, .about {
+    flex: 5;
+}
+
+.social {
+    width: 130px;
+}
+
+#footer ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#footer .social {
+    display: flex;
+}
+
+.contato {
+    padding-left: 12px;
+}
+
+.contato img {
+    padding-right: 12px;
+}
+
+#footer .social a img {
+    text-decoration: none;
+}
+
+#footer .social a {
+    display: block;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 6px;
 }
 
 /*footer*/
@@ -179,8 +317,8 @@ main .container{
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width:1240px){
-    .description{
+@media only screen and (min-width:1240px) {
+    .description {
         padding-top: 200px;
     }
 }
