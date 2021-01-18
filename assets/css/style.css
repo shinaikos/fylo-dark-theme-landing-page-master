@@ -142,16 +142,16 @@ main .container {
 }
 
 .work .container {
-    padding: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 .work-img, .work-text {
     width: 50%;
 }
 
-.work-img {
-    display: flex;
-    justify-content: flex-end;
+.work-img img {
+    width: 100%;
 }
 
 .work-text {
@@ -182,7 +182,7 @@ main .container {
 }
 
 .comments .container {
-    max-width: 1200px;
+    flex-wrap: wrap;
     background-image: url(../../images/bg-quotes.png);
     background-repeat: no-repeat;
 }
@@ -305,6 +305,14 @@ main .container {
     width: 40px;
     padding: 6px;
 }
+.location{
+    display: flex;
+}
+.location img{
+    width: 26px;
+    height: 26px;
+}
+
 
 /*footer*/
 
@@ -317,8 +325,62 @@ main .container {
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width:1240px) {
+@media only screen and (max-width:1240px) {
     .description {
         padding-top: 200px;
+    }
+    .work .container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:820px) {
+    .footer-info {
+        flex-direction: column;
+    }
+    .work .container {
+        padding: 20px;
+    }
+    .work-img, .work-text {
+        width: 100%;
+    }
+    .work-img img {
+        width: 100%;
+    }
+    .container {
+        padding: 20px;
+    }
+    .enviar {
+        flex-direction: column;
+    }
+    .enviar input {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .email .container{
+        height: auto;
+        width: 90%;
+        border-radius: 12px;
+    }
+    nav ul {
+        font-size: 12px;
+    }
+    nav li a {
+        padding: 6px;
+    }
+    .logo img {
+        width: 120px;
+    }
+    .comment-card {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .services{
+        width: 100%;
+    }
+    #footer {
+        padding-left: 40px;
     }
 }
